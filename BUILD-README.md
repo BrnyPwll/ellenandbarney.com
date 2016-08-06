@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ![Gulp Starter](extras/demo/src/images/gulp-starter-logo.png)
 
 [![Build Status](https://travis-ci.org/vigetlabs/gulp-starter.svg?branch=static-server)](https://travis-ci.org/vigetlabs/gulp-starter)
@@ -175,3 +176,7 @@ Original Blog Post: https://www.viget.com/articles/gulp-browserify-starter-faq
 </a>
 
 Visit [code.viget.com](http://code.viget.com) to see more projects from [Viget.](https://viget.com)
+=======
+# ellenandbarney.com
+The 'wedsite' for the wedding of Ellen and myself
+>>>>>>> f60a65396ddb903b381f0f171bea8916874efee3
