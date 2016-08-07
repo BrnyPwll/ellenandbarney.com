@@ -1,0 +1,95 @@
+@import "_globals";
+
+html, body {
+    height: 100%;
+}
+
+
+body {
+  background-color: $backgroundColour;
+
+  height: 100%;
+
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 200px;
+    max-width: 30vw;
+    background-image: url(/images/top-right-decoration.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: contain;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    max-width: 30vw;
+    background-image: url(/images/bottom-left-decoration.png);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: contain;
+  }
+
+}
+
+.logo {
+
+  position: relative;;
+  font-family: 'Alex Brush', cursive;
+  font-size: 3em;
+
+
+  .echo {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .bravo {
+    position: absolute;
+    top: 0.33em;
+    left: 0.21em;
+  }
+}
+
+.names {
+  font-family: 'Amatic SC', cursive;
+  text-align: center;
+  font-size: 4em;
+  .ampersand {
+    font-family: 'Alex Brush', cursive;
+  }
+}
+
+.intro {
+  font-family: 'Alex Brush', cursive;
+  text-align: center;
+  font-size: 2em;
+}
+
+.date {
+  font-size: 3em;
+  font-family: 'Amatic SC', cursive;
+  text-align: center;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height:100vh;
+  position: relative;
+
+  div {
+    flex: 0 1 auto;
+  }
+}
