@@ -6,36 +6,114 @@
 
 {% extends 'layouts/application.html' %}
 
+{% block header %}
+
+<header id="page-header">
+  <nav id="page-nav">
+    <span id="logo" class="tk-emily-austin">EB</span>
+    <button id="menu-button" class="hamburger" type="button">
+      <span class="hamburger-box">
+        <span class="bar"></span>
+        <span class="bar">Menu</span>
+        <span class="bar"></span>
+      </span>
+    </button>
+    <ul id="menu">
+    </ul>
+  </nav>
+</header>
+
+
+
+
+{% endblock %}
+
 {% block content %}
 
+<section id="cover" class="full-screen">
 
-
-<div class="logo">
-  <span class="echo">E</span>
-  <span class="bravo">B</span>
+<div class="title">
+<h1 id="cover-names" class="tk-emily-austin">Ellen &amp; Barney</h1>
+<div id="cover-date" class="tk-emily-austin">18th December 2016</div>
 </div>
 
 
-<div class="page">
+</section>
+
+<section id="about" class="full-screen" data-navigable data-label="About us">
+  <header>
+    <h2>The Couple</h2>
+    <h3>What's the story? </h3>
+  </header>
+</section>
+
+<section id="party" class="full-screen" data-navigable data-label="Bridal party">
+  <header>
+    <h2>The Players</h2>
+    <h3>Who's in it?</h3>
+  </header>
+</section>
+
+<section id="venue" class="full-screen" data-navigable data-label="Venue">
+  <header>
+    <h2>The Location</h2>
+    <h3>Leez Priory</h3>
+  </header>
+  <p>Hartford End, Great Leighs, Chelmsford CM3 1JP</p>
+</section>
+
+<section id="day" data-navigable data-label="Times">
+  <header>
+    <h2>The Day</h2>
+    <h3>What's happening when?</h3>
+  </header>
+</section>
+
+<section id="evening" data-navigable data-label="Party">
+  <header>
+    <h2>The Evening</h2>
+    <h3>Party time!</h3>
+  </header>
+</section>
+
+<section id="faq" data-navigable data-label="FAQ">
+  <header>
+    <h2>The Questions</h2>
+    <h3>Frequently asked, and otherwise</h3>
+  </header>
+</section>
+
+<section id="accomodation" data-navigable>
+  <header>
+    <h2>The Accomodation</h2>
+    <h3>Where to stay</h3>
+  </header>
+</section>
+
+<section id="rsvp" data-navigable>
+  rsvp
+</section>
 
 
 
 
-<div class="names-date">
-  <div class="intro">
-  Save our Date
-  </div>
-  <div class="names">
-    Ellen <span class="ampersand">&amp;</span> Barney
-  </div>
-  <div class="date">
-    18 <span>&bull;</span> 12 <span>&bull;</span> 16
-  </div>
-</div>
 
-</div>
 
-<img class="decoration top-right" src="images/top-right-decoration.png">
-<img class="decoration bottom-left" src="images/bottom-left-decoration.png">
+
+
+
+
+
+{% endblock %}
+
+
+{% block footer %}
+
+<footer>
+  logo and menu
+</footer>
+
+
+
 
 {% endblock %}
