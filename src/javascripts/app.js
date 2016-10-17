@@ -8,6 +8,7 @@ const menu = document.querySelector('#menu');
 const sections = document.querySelectorAll('section[data-navigable]');
 const pagenav = document.querySelector('#page-nav');
 const pageheader = document.querySelector('#page-header');
+const cover = document.querySelector('#cover');
 
 let menuitems = menu.querySelectorAll('li');
 let menulinks = menu.querySelectorAll('a');
@@ -36,10 +37,10 @@ const scanForMenuItems = () => {
   // Set up the menu items
   for (let x = 0; x < sections.length; x++) {
     let currentSection = sections[x];
-    let header = currentSection.querySelector('h2');
-    if (header) {
-      const headerText = currentSection.getAttribute('data-label');//.value;//innerHTML;//"hh";
-      const sectionId = currentSection.getAttribute('id');
+    const headerText = currentSection.getAttribute('data-label');//.value;//innerHTML;//"hh";
+    const sectionId = currentSection.getAttribute('id');
+
+    if (headerText) {
       const link = document.createElement('a')
       link.innerHTML = headerText;
       link.setAttribute('href', '#' + sectionId);
@@ -75,9 +76,19 @@ const setHeaderBackgrounds = (percent) => {
   let backgroundColour = `rgba(255,255,255, ${opacity})`;
   let menuBackgroundColour = `rgba(${colour},${colour},${colour}, ${menuOpacity})`;
   let fontColour = `rgb(${inverseColour},${inverseColour},${inverseColour})`;
+
+  let blur = 'blur(' + (percent * 5) + 'px)';
+
   pagenav.style.backgroundColor = backgroundColour;
   pagenav.style.color = fontColour;
+  menubutton.style.color = fontColour;
   menu.style.backgroundColor = menuBackgroundColour;
+  pageheader.style.backdropFilter = blur;
+  pageheader.style.webkitBackdropFilter = blur;
+
+  cover.style.backdropFilter = blur;
+  cover.style.webkitBackdropFilter = blur;
+
 
   for (let x = 0; x < menulinks.length; x++) {
     menulinks[x].style.color = fontColour;
@@ -86,9 +97,9 @@ const setHeaderBackgrounds = (percent) => {
 };
 
 const checkScrollPosForHeader = (scrollPos) => {
-  if (scrollPos < screen.height) {
+  if (scrollPos < window.innerHeight) {
     isOnCover = true;
-    let percent = scrollPos / screen.height;
+    let percent = scrollPos / window.innerHeight;
     setHeaderBackgrounds(percent);
 
   } else if(isOnCover) {
@@ -98,3 +109,7 @@ const checkScrollPosForHeader = (scrollPos) => {
 }
 
 onScroll(checkScrollPosForHeader);
+
+//cover.style.height = window.outerHeight + 'px';
+//alert(window.innerHeight);
+//alert('hello');

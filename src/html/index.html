@@ -1,5 +1,5 @@
 {#
-  Nunjucks Templating!
+n  Nunjucks Templating!
   Homepage: https://mozilla.github.io/nunjucks/
   Docs: https://mozilla.github.io/nunjucks/api.html
 #}
@@ -10,7 +10,7 @@
 
 <header id="page-header">
   <nav id="page-nav">
-    <span id="logo" class="tk-emily-austin">EB</span>
+    <span id="logo">E<span>&amp;</span>B</span>
     <button id="menu-button" class="hamburger" type="button">
       <span class="hamburger-box">
         <span class="bar"></span>
@@ -33,35 +33,77 @@
 <section id="cover" class="full-screen">
 
 <div class="title">
-<h1 id="cover-names" class="tk-emily-austin">Ellen &amp; Barney</h1>
-<div id="cover-date" class="tk-emily-austin">18th December 2016</div>
+<h1 id="cover-names">Ellen <span>&amp;</span> Barney</h1>
+<div id="cover-date">18th December 2016</div>
 </div>
 
 
 </section>
 
-<section id="about" class="full-screen" data-navigable data-label="About us">
+<section id="welcome">
+  <div class="wreath">
+    <span class="intro">'Tis the season to be</span>
+    <span class="married">Married</span>
+    <span class="date-time">18th December @ 1pm</span>
+    <span class="venue">Leez Priory</span>
+  </div>
+</section>
+
+<section id="about" class="" data-navigable data-label="About us">
   <header>
     <h2>The Couple</h2>
     <h3>What's the story? </h3>
+
   </header>
+  <div class="content">
+    <div class="person">
+          <h4>Periergia</h4>
+    <p>/ˌpɛ.ɹiˈɜː.dʒi.ə/</p>
+    <p>The use of an excessively elaborate or elevated style to discuss a trivial matter; bombastic or laboured language.</p>
+  </div>
+  <div class="person">
+    <h4>Barolo</h4>
+    <p>/ba.ˈrɔ.lo/</p>
+    <p>Barolo is a red DOCG wine produced in the northern Italian region of Piedmont, made from the Nebbiolo grape.</p>
+  </div>
+</div>
 </section>
 
-<section id="party" class="full-screen" data-navigable data-label="Bridal party">
+<!-- <section id="party" class="full-screen" data-navigable data-label="Bridal party">
   <header>
     <h2>The Players</h2>
     <h3>Who's in it?</h3>
+    <h4>Melton
   </header>
-</section>
+</section> -->
 
 <section id="venue" class="full-screen" data-navigable data-label="Venue">
   <header>
     <h2>The Location</h2>
     <h3>Leez Priory</h3>
   </header>
-  <p>Hartford End, Great Leighs, Chelmsford CM3 1JP</p>
-</section>
+  <p>Hartford End, Great Leighs, Chelmsford <a href="https://www.google.co.uk/maps/place/Leez+Priory+Wedding+Venue/@51.839514,0.467375,15z/data=!4m5!3m4!1s0x0:0x75c2ac1393672bf!8m2!3d51.839514!4d0.467375" target="_blank">CM3 1JP</a></p>
+  <iframe id="map" src="https://www.google.com/maps/embed/v1/place?q=Leez%20Priory&zoom=11&attribution_source=Barney+and+Ellen+Wedding&attribution_web_url=https://www.ellenandbarney.com/&key=AIzaSyD6AR5dxlruUJnOLksCWeD30mwDTdSnxkg">
+    </iframe>
+<div class="content">
+  <p><a href="http://www.leez-priory.co.uk/">Leez Priory</a> is around an hour's drive from London,
+    and easily accessed by either the M11 or the A12.</p>
+    <p>Chelmsford Station is 10 miles from the venue, with
+      trains departing from London Liverpool Street.</p>
+      <p>Taxis can be booked through
+        <dl>
+          <dt>Arrivals</dt>
+          <dd><a href="tel:01245451145">01245 451 145</a></dd>
+          <dt>Yellow Line</dt>
+          <dd><a href="tel:01376334455">01376 334 455</a></dd>
+          <dt>Eastern Cars</dt>
+          <dd><a href="tel:01371873323">01371 873 323</a></dd>
+        </dl>
+      </p>
 
+</div>
+</section>
+<!--
 <section id="day" data-navigable data-label="Times">
   <header>
     <h2>The Day</h2>
@@ -75,23 +117,151 @@
     <h3>Party time!</h3>
   </header>
 </section>
+-->
+
+<section id="accomodation" data-navigable data-label="Accomodation">
+  <header>
+    <h2>The Accomodation</h2>
+    <h3>Where to stay</h3>
+  </header>
+  <div class="content">
+  <p>There is limited bed and breakfast accommodation available on site, so
+    please contact us directly to enquire about it.</p>
+    <p>Alternatively, there are a number of nearby hotels and B&amp;Bs about 15 minutes drive away.
+      <dl>
+        <dt>Homelye Farm Courtyards B&amp;B</dt>
+        <dd>
+          <a href="tel:01245451145">01371 872 127</a>
+          <ul>
+            <li><a target="_blank" href="http://www.homelye.co.uk">Website</a></li>
+            <li><a  target="_blank" href="https://www.google.co.uk/maps/dir/Homelye+Farm,+Braintree+Road,+Dunmow+CM6+3AW/Leez+Priory+Wedding+Venue,+Hartford+End,+Great+Leighs,+Chelmsford/@51.8585619,0.3998523,13z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x47d8f2c6265bde7f:0xe961f76dd1c482aa!2m2!1d0.394312!2d51.875689!1m5!1m1!1s0x47d8eb11ec4eb37f:0x75c2ac1393672bf!2m2!1d0.467375!2d51.839514">Directions</a></li>
+          </ul>
+        </dd>
+        <dt>Premier Inn Freeport Village</dt>
+        <dd><a href="tel:01376334455">0870 111 2946</a>
+          <ul>
+            <li><a target="_blank" href="http://www.premierinn.com/gb/en/hotels/england/essex/braintree/braintree-freeport-village.html?INNID=BRABAR&ARRdd=18&ARRmm=12&ARRyyyy=2016&NIGHTS=1&ROOMS=1&ADULT1=2&CHILD1=0&COT1=0&INTTYP1=DB&SID=4&ISH=true&BRAND=PI">Website</a></li>
+            <li><a target="_blank" href="https://www.google.co.uk/maps/dir/Premier+Inn+Braintree+Freeport+Village+Hotel,+Fowlers+Farm,+Cressing+Rd,+Braintree+CM77+8DH,+United+Kingdom/Leez+Priory+Wedding+Venue,+Hartford+End,+Great+Leighs,+Chelmsford/@51.8574167,0.4482503,12z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x47d8faa421f41c31:0x2211db0bb5cca0cf!2m2!1d0.5833159!2d51.866593!1m5!1m1!1s0x47d8eb11ec4eb37f:0x75c2ac1393672bf!2m2!1d0.467375!2d51.839514">Directions</a></li>
+          </ul></dd>
+        <dt>Atlantic Hotel Chelmsford</dt>
+        <dd><a href="tel:01371873323">01245 268 168</a>
+          <ul>
+            <li><a  target="_blank" href="http://atlantichotelchelmsford.co.uk">Website</a></li>
+            <li><a  target="_blank" href="https://www.google.co.uk/maps/dir/Best+Western+Atlantic+Hotel,+New+Street,+Chelmsford+CM1+1PP,+United+Kingdom/Leez+Priory+Wedding+Venue,+Hartford+End,+Great+Leighs,+Chelmsford/@51.7898102,0.3972326,12z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x47d8ebd89e3be65d:0xf3c337db716876ff!2m2!1d0.474593!2d51.739937!1m5!1m1!1s0x47d8eb11ec4eb37f:0x75c2ac1393672bf!2m2!1d0.467375!2d51.839514">Directions</a></li>
+          </ul></dd>
+      </dl>
+
+    </p>
+  </div>
+</section>
+
 
 <section id="faq" data-navigable data-label="FAQ">
   <header>
     <h2>The Questions</h2>
     <h3>Frequently asked, and otherwise</h3>
-  </header>
+</header>
+<div class="content">
+    <h4>When are Ellen and Barney getting married?</h4>
+    <p>At long last.</p>
+    <p>Alternatively, on Sunday 18th December, 2016.</p>
+
+    <h4>Where is the wedding venue?</h4>
+    <p><a target="_blank" href="http://www.leez-priory.co.uk">Leez Priory</a>, Hartford End, Great Leighs, Chelmsford, <a href="https://www.google.co.uk/maps/place/Leez+Priory+Wedding+Venue/@51.839514,0.467375,15z/data=!4m5!3m4!1s0x0:0x75c2ac1393672bf!8m2!3d51.839514!4d0.467375" target="_blank">CM3 1JP</a></p>
+    <p>Since you asked, it's a 16th-century mansion in the parish of Little Leighs, Chelmsford, Essex.</p>
+
+    <h4>How do I get there?</h4>
+    <p>We would suggest that walking should be avoided; not only because it puts a strain
+      on the knees, but also vehicular transportation can be much more comfortable in cold weather.
+    </p>
+    <p>If you have access to a car, and are able to drive it, there is ample parking at the venue.
+      However, there are a number of reputable firms which when given the promise of payment at
+      the end of a journey, will provide you with both a vehicle and someone to drive it for you.
+      Sadly, you will either have to dismiss the driver after the conclusion of your journey, or pay them to wait patiently
+      outside, because we are regretfully unable to provide accommodation or refreshment to anyone
+      who is technically the paid staff of our guests, however temporary.</p>
+      <p>It is also true that while there is, unfortunately, no heli-pad or landing strip on the grounds, there
+        are a number of excellent fields nearby, whose bovine inhabitants would only be too delighted
+        to witness your arrival by helicopter or light aircraft.
+      </p>
+      <p>Disapparation is strictly forbidden, on the grounds that it doesn't exist, and you
+        should be old enough by now to realise this.</p>
+
+      <h4>What time should I arrive?</h4>
+      <p>Depending on how precise you wish to be upon arrival, you could either arrive at the beginning
+        of the 21st Century and wait a few years, or simply arrive between midday and 12:45 on the 18th December, 2016.
+</p>
+<p>We have exclusive use of the venue from 12, when welcome drinks will be available.
+  The ceremony is at 1pm sharp; if you are late, you may miss the ceremony, but more
+  importantly, you will miss the welcome drinks.</p>
+
+  <h4>What is the itinerary for the day?</h4>
+    <p>That would spoil the surprise.</p>
+    <p>We can tell you that it includes speeches, food, fizzy wine, a disco and possibly
+      some white doves, depending on how clean they are.</p>
+
+      <h4>What time should evening guests arrive?</h4>
+      <p>The evening's festivities begin at 6pm, with disco, an amazing feast of a platter, a bar and the
+        universe generally going foom.</p>
+
+  <h4>What time will we get kicked out?</h4>
+  <p>This entirely depends on how long your trousers stay on.</p>
+  <p>Assuming that you remain fully clothed and don't try and mount any statues,
+    carriages are either at midnight, or earlier if you drink so much you're sick.</p>
+
+  <h4>Can I bring my children?</h4>
+  <p>This would be much less weird than bringing someone else's children.</p>
+  <p>As parents ourselves, we appreciate that it can be difficult to arrange
+    childcare, so we are able to accomodate children on the day. Please let
+    us know in advance how many you're bringing, and their ages, as this
+    information is required by the venue, and the inevitable security firms
+    we'll need to keep an eye on them.</p>
+
+  <h4>Can I bring my pets?</h4>
+  <p>No.</p>
+
+  <h4>How about confetti?</h4>
+  <p>Petals that float on the breeze: yes.</p>
+  <p>Damp paper that sticks to your shoes: no.</p>
+  <p>Rice: double no.</p>
+
+  <h4>Do you have a gift list?</h4>
+  <p>In the four years we've been together, we have accumilated
+    two cars, four games consoles, innumerable Apple&trade; devices
+    a baby, two copies of 'Cards Against Humanity', 24 pairs of shoes,
+    two cats, three Swiss Army Knives and SO MUCH MORE.</p>
+    <p>Your company is gift enough.</p>
+
+  <h4>Are you having a honeymoon?</h4>
+  <p>When we can afford one, and when Oscar starts sleeping through
+    the night.</p>
+
+  <h4>Know of any good hotels in Chelmsford?</h4>
+  <p>Well, there are actually a limited number of bedrooms
+    available at the venue, including a slap-up breakfast
+    the following morning.  Please contact us directly to check
+    prices and availability.</p>
+    <p>Alternatively, we also have details for <a href="#accomodation">local hotels and B&amp;Bs</a>.</p>
+</div>
+
 </section>
 
-<section id="accomodation" data-navigable>
-  <header>
-    <h2>The Accomodation</h2>
-    <h3>Where to stay</h3>
-  </header>
-</section>
 
 <section id="rsvp" data-navigable>
-  rsvp
+  <header>
+    <h2>RSVP</h2>
+    <h3>Let us know!</h3>
+</header>
+<div class="content">
+<p>
+  We'd love to know if you can make it. Hopefully you've already received an invite in the post,
+  and there should be an RSVP card in there. Simply bung it back in the post to us!
+</p>
+<p>
+  In any case, you can always email us - we're looking forward to hearing from you.
+</p>
+<div class="separator">&nbsp;</div>
+</div>
 </section>
 
 
