@@ -7,6 +7,9 @@ var webpack         = require('webpack')
 var webpackManifest = require('./webpackManifest')
 
 module.exports = function(env) {
+
+console.log('hello');
+
   var jsSrc = path.resolve(config.root.src, config.tasks.js.src)
   var jsDest = path.resolve(config.root.dest, config.tasks.js.dest)
   var publicPath = pathToUrl(config.tasks.js.dest, '/')
